@@ -10,4 +10,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  row-gap: 40px;
+}
+
+.App .creation-seaction {
+  width: 900px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
 }
