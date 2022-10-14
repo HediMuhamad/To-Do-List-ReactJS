@@ -1,0 +1,13 @@
+.task-input {
+  width: 780px;
+  height: 100%;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.task-input:focus {
+  outline: none !important;
+}

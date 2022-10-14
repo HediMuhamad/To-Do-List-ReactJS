@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <div className="creation-seaction">
+        <TaskInput placeholder={"Add Task"} type={"text"} />
         <Button label={"Add"} />
       </div>
       <div className="todo-list-section">
