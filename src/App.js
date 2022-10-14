@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Task from "./components/task/task.component";
 
 function App() {
+  const tasks = [
+    "Study to ISA Quiz",
+    "Preparing ISA Report",
+    "Reviewing AI's papers",
+    "DBMS Report about final project with normalization",
+    "MDB Report",
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="creation-seaction"></div>
+      <div className="todo-list-section">
+        {tasks.map((task) => {
+          return <Task text={task} key={task} />;
+        })}
+      </div>
     </div>
   );
 }

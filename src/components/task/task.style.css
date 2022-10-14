@@ -1,0 +1,61 @@
+.task-container {
+  width: 900px;
+  height: 55px !important;
+
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #d2f4cc;
+  border-radius: 5px;
+
+  transition: background-color linear 200ms;
+}
+
+.task-container:hover {
+  background-color: #cbeac6 !important;
+}
+
+.task-container .task-text {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #450;
+}
+
+.task-container .task-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.task-container .task-buttons-container * {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bbd7b6;
+  color: #450;
+  font-size: 12px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  border-radius: 100%;
+  transition: background-color, color linear 200ms;
+  user-select: none;
+  cursor: pointer;
+}
+
+.task-container .task-buttons-container .task-copy-btn:hover {
+  background-color: #a4c69e !important;
+}
+
+.task-container .task-buttons-container .task-delete-btn:hover {
+  background-color: rgb(216, 79, 79) !important;
+  color: whitesmoke;
+}
+
+.hori-row {
+  border-width: 1px;
+  opacity: 0.5;
+}
