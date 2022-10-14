@@ -20,6 +20,17 @@ function App() {
     setNewTaskValue(event.target.value);
   };
 
+  const taskInputKeyDownHandler = (event) => {
+    if (
+      event.code === "Enter" &&
+      !!newTaskValue &&
+      !tasks.includes(newTaskValue)
+    ) {
+      setTasks([...tasks, newTaskValue]);
+      setNewTaskValue("");
+    }
+  };
+
   const deleteTaskHandler = (task) => {
     const newTasks = [];
 
@@ -40,6 +51,7 @@ function App() {
           type={"text"}
           value={newTaskValue}
           onChange={taskInputChangedHandler}
+          onKeyDown={taskInputKeyDownHandler}
         />
         <Button label={"Add"} onClick={addingNewTaskHandler} />
       </div>
